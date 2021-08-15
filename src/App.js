@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Hello from './Hello';
+import Wrapper from './Wrapper';
+import Counter from './Counter';
+
+// function App() {
+  
+//   return (
+//     <Wrapper>
+//       <Hello name="react" color = "red" isSpecial 
+//       // isSpecial이라는 props를 설정해서 조건부 렌더링 , true는 자바스크립트이므로 중괄호로 감싼다.
+//       /> 
+//       <Hello color = "pink" />
+//     </Wrapper>
+//   );
+// }
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Counter />
   );
 }
 
